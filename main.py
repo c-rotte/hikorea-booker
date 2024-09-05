@@ -5,6 +5,7 @@ from appointment_checker import AppointmentChecker
 from appointment_booker import AppointmentBooker
 from appointment_canceller import AppointmentCanceller
 from config import Config
+from discord_webhook import DiscordWebhook
 
 
 def parse_arguments():
@@ -15,7 +16,18 @@ def parse_arguments():
     parser.add_argument("office_numbers", help="Office numbers to check for appointments")
     parser.add_argument("max_inclusive_date", help="Maximum date to check for appointments (YYYYMMDD)")
     parser.add_argument("check_interval", type=int, help="Interval between checks (in seconds)")
+    parser.add_argument("discord_webhook", help="Discord webhook URL")
     return parser.parse_args()
+
+
+WEBHOOK_URL = None
+
+
+def notify(message: str):
+    webhook = DiscordWebhook(url=WEBHOOK_URL,
+                             rate_limit_retry=True,
+                             content=message)
+    webhook.execute()
 
 
 def main():
@@ -28,6 +40,8 @@ def main():
         max_inclusive_date=args.max_inclusive_date,
         check_interval=args.check_interval
     )
+    global WEBHOOK_URL
+    WEBHOOK_URL = args.discord_webhook
 
     print(f"Starting appointment checker with interval of {config.check_interval} seconds...")
 
@@ -53,7 +67,7 @@ def main():
                         print(f"Failed to book appointment: {result_msg}")
                         continue
                     print(f"Booked appointment: {new_appointment}")
-                    # here you can implement some kind of notification system, perhaps a webhook or email
+                    notify(f"Booked appointment: {new_appointment}")
                     break
 
         print(f"Waiting for {config.check_interval} seconds before next check...")
