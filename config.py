@@ -8,4 +8,5 @@ class Config:
     visa_birth: int
     office_numbers: list[str]
     max_inclusive_date: str
+    pin: str
     check_interval: int

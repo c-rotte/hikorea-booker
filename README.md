@@ -38,7 +38,9 @@ Example:
 # at office 800 and 801,
 # up until December 31, 2024,
 # with checks every 15 seconds
-python main.py "SMITH JOHN DOE" GE2400001337 20010625 800,801 20241231 15
+# starting with pin 0000
+# notifying discord at <url>
+python main.py "SMITH JOHN DOE" GE2400001337 20010625 800,801 20241231 15 0000 <url>
 ```
 
 ### Arguments
@@ -49,13 +51,13 @@ python main.py "SMITH JOHN DOE" GE2400001337 20010625 800,801 20241231 15
 - `OFFICE_NUMBERS`: One or more office numbers to check for appointments (comma-separated), see `OFFICES.txt`
 - `MAX_DATE`: The latest date you want to check for appointments (YYYYMMDD)
 - `CHECK_INTERVAL`: Time in seconds between each check
+- `PIN`: The password to use when booking appointments
 
 ## Important Notes
 
 - This tool is for educational purposes only. Use it responsibly and in accordance with HiKorea's terms of service.
 - Excessive use may result in your IP being blocked by HiKorea.
 - Always verify any appointments booked through this tool on the official HiKorea website.
-- The tool uses a default password of `0000` for bookings.
 
 ## Disclaimer
 

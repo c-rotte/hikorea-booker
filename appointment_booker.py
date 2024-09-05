@@ -1,6 +1,5 @@
 import random
 import requests
-from bs4 import BeautifulSoup
 from config import Config
 
 
@@ -66,7 +65,7 @@ class AppointmentBooker:
             "mobileTelNo1": "",
             "mobileTelNo2": "",
             "mobileTelNo3": "",
-            "resvPasswd": "0000",
+            "resvPasswd": self.config.pin,
             "resvYmd": f"{appointment['date']} {'~'.join(appointment['time'])}",
             "visiPurpTxt": "",
             "TRAN_TYPE": "ComSubmit"

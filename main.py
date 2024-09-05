@@ -16,6 +16,7 @@ def parse_arguments():
     parser.add_argument("office_numbers", help="Office numbers to check for appointments")
     parser.add_argument("max_inclusive_date", help="Maximum date to check for appointments (YYYYMMDD)")
     parser.add_argument("check_interval", type=int, help="Interval between checks (in seconds)")
+    parser.add_argument("pin", help="PIN for the appointment")
     parser.add_argument("discord_webhook", help="Discord webhook URL")
     return parser.parse_args()
 
@@ -38,6 +39,7 @@ def main():
         visa_birth=int(args.visa_birth),
         office_numbers=args.office_numbers.split(","),
         max_inclusive_date=args.max_inclusive_date,
+        pin=args.pin,
         check_interval=args.check_interval
     )
     global WEBHOOK_URL
@@ -70,6 +72,7 @@ def main():
                         continue
                     print(f"Booked appointment: {new_appointment}")
                     notify(f"Booked appointment: {new_appointment}")
+                    pin = "0000"
                     break
 
         print(f"Waiting for {config.check_interval} seconds before next check...")

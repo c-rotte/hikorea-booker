@@ -1,6 +1,8 @@
 import random
 import requests
 from bs4 import BeautifulSoup
+
+import utils
 from config import Config
 
 
@@ -17,7 +19,7 @@ class AppointmentCanceller:
             "TRAN_TYPE": "ComSubmit"
         })
         captcha_num = random.randint(1000, 9999)
-        self.session.post("https://www.hikorea.go.kr/resv/ResvIdntC.pt", data={
+        res = self.session.post("https://www.hikorea.go.kr/resv/ResvIdntC.pt", data={
             "inputNumFull": captcha_num,
             "confNum": captcha_num,
             "visaNo": self.config.visa_number,
@@ -27,16 +29,16 @@ class AppointmentCanceller:
             "pageGubun": "NonSearch",
             "TRAN_TYPE": "ComSubmit"
         })
+        soup = BeautifulSoup(res.text, "html.parser")
+        self.app_l_info = soup.find("input", {"name": "applInfo"})["value"]
 
     def get_current_appointments(self):
         self._initialize_session()
 
         def get_res(page):
-            app_l_info = ("QUFGQzR5TVpRWHpaY3Nua0tSVGx1VkFBWUQ0RytjWDhXS3hjcWpIZWl2akxOVXF0RFpZR3d0NFBYQ3"
-                          "VDRVhjWXpwOVlYUms5YzlFR3g5aWZIYkZPYzRUK0NuWHVucUFaeDhudVNzVEtQNUhtQXc9PQ==")
             res = self.session.post("https://www.hikorea.go.kr/mypage/MypgNonResvPageR.pt", data={
                 "page": page,
-                "applInfo": app_l_info,
+                "applInfo": self.app_l_info,
                 "authType": 3,
                 "pageGubun": "NonSearch",
                 "langCd": "en",
@@ -72,20 +74,22 @@ class AppointmentCanceller:
         return reserved
 
     def cancel_appointment(self, reservation_id):
-        self.session.post("https://www.hikorea.go.kr/mypage/MypgNonResvDetailR.pt", data={
+        if self.session is None:
+            self._initialize_session()
+        res = self.session.post("https://www.hikorea.go.kr/mypage/MypgNonResvDetailR.pt", data={
             "page": 1,
             "pageUserId": "hikorea_3",
-            "applInfo": "QUFGQzR5TVpRWHpaY3Nua0tSVGx1VkFBWUQ0RytjWDhXS3hjcWpIZWl2akxOVXF0RFpZR3d0"
-                        "NFBYQ3VDRVhjWXpwOVlYUms5YzlFR3g5aWZIYkZPYzRUK0NuWHVucUFaeDhudVNzVEtQNUhtQXc9PQ==",
-            "searchStDt": 20240905,
-            "searchEnDt": 20250305,
+            "applInfo": self.app_l_info,
+            "searchStDt": utils.get_today_ymd(),
+            "searchEnDt": utils.get_ymd_in_one_year(),
             "resvRecptNo": reservation_id
         })
+        password = res.text.split('comSubmit.addParam("password", \'')[1].split("'")[0]
         self.session.post("https://www.hikorea.go.kr/mypage/MypgResvD.pt", data={
             "TRAN_TYPE": "ComAjax",
             "resvRecptNo": reservation_id,
             "userId": "hikorea_3",
             "applNm": self.config.visa_name,
-            "password": "XE0QiMRjnNHH2hLkoehFBo/A0MXx71ALd0fG4gB2ahzQC9/SWGQf61DQkx/DKMwCt9SisrkWyyHXzbWC4Hy3UA==",
-            "suggest": "0000"
+            "password": password,
+            "suggest": self.config.pin
         })
