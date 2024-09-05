@@ -52,6 +52,8 @@ def main():
     while True:
         print(f"Checking appointments at {datetime.now()}")
         current_appointments = canceller.get_current_appointments()
+        for appointment in current_appointments:
+            print(f"Found current appointment: {appointment}")
         new_appointments = checker.check_new_appointments()
 
         if new_appointments:
