@@ -62,7 +62,8 @@ def main():
             for new_appointment in new_appointments:
                 if not current_appointments or new_appointment['date'] < min(
                         app['date'] for app in current_appointments):
-                    print(f"Found earlier appointment: {new_appointment}")
+                    print(
+                        f"Found earlier appointment: {new_appointment} (current appointments: {current_appointments})")
                     for current_appointment in current_appointments:
                         print(f"Cancelling appointment: {current_appointment['id']}")
                         canceller.cancel_appointment(current_appointment['id'])
