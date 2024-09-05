@@ -72,7 +72,6 @@ def main():
                         continue
                     print(f"Booked appointment: {new_appointment}")
                     notify(f"Booked appointment: {new_appointment}")
-                    pin = "0000"
                     break
 
         print(f"Waiting for {config.check_interval} seconds before next check...")
