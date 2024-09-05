@@ -50,7 +50,10 @@ def main():
                         canceller.cancel_appointment(current_appointment['id'])
                     result_msg = booker.book_appointment(new_appointment)
                     if result_msg != "Success":
+                        print(f"Failed to book appointment: {result_msg}")
                         continue
+                    print(f"Booked appointment: {new_appointment}")
+                    # here you can implement some kind of notification system, perhaps a webhook or email
                     break
 
         print(f"Waiting for {config.check_interval} seconds before next check...")
