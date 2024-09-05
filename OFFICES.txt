@@ -1,0 +1,81 @@
+[683] Seoul Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[684] Incheon Immigration Office - Visit Reservation for Nationality Affairs (Naturalization, Reinstatement/Restoration        of Nationality, etc.) (Jurisdiction: Inchoen, Bucheon, Gimpo, Ganghwa County)
+[686] Seoul Southern Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.[Location: Magok-dong]
+[687] Busan Immigration Office - [General Civil Service Center]Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[688] Daegu Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[689] Yangju Immigration office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[690] Ulsan Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[691] Gwangju Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[692] Cheongju Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[694] Daejeon Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[695] Yeosu Immigration Office - [Yeosu Immigration Office] Scheduling Appointment for Naturalization, Recovery of Nationality, etc
+[696] Changwon Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[697] Chuncheon Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[698] Jeonju Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[699] Donghae Branch Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[700] Sokcho Branch Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[713] Jeju Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.(2021.03.02 ~ )
+[716] Yeosu Immigration Office - [Yeosu Immigration Office] Visit Reservation for Permission to Stay(from May 1,2022)(Jurisdiction : Yeosu, Suncheon)
+[717] Chuncheon Immigration Office - Others(2021.05.01 ~ )
+[718] Gwangyang Branch Office - Others(2021.05.01 ~ )
+[719] Tongyeong Branch Office - Others(2021.05.01 ~ )
+[720] Gwangju Immigration Office Mokpo Branch Office - Others(2021.05.01 ~ )
+[723] Sokcho Branch Office - Others(2021.05.01 ~ )
+[724] Donghae Branch Office - Others(2021.05.01 ~ )
+[725] Daegu Immigration Office Gumi Branch Office - Others(2021.05.01 ~ )
+[726] Daejeon Immigration Office Dangjin Branch Office - Others(2021.05.01 ~ )
+[728] Jeonju Immigration Office - [Jeonju Immigration Office]  General Residence Affairs (May 1, 2021 ~)
+[729] Jeonju Immigration Office - [Iksan Immigration Center] General Residence Affairs (Location: Floor 4, Iksan Station) (May 1, 2021 ~)
+[731] Sacheon Branch Office - Others(2021.05.01 ~ )
+[732] Geoje Branch Office - Others(2021.05.01 ~ )
+[733] Seosan Branch Office - Others(2021.05.01 ~ )
+[734] Gunsan Branch Office - Others(2021.05.01 ~ )
+[736] Changwon Immigration Office - Others(2021.05.01~)
+[741] Yangju Immigration office Goyang Branch Office - Others(2021.05.01 ~ )
+[742] Daejeon Immigration Office Cheonan Branch Office - [Asan Immigration Center] General sojourn related affairs (Excluding permanent residency affairs)(2021.05.01 ~ ) * Applying via courier(registered mail) NOT available
+[747] Pyeongtaek Branch Office - Foreigner Residence Control (Resgistration, Visa extension, Change of visa status etc)(2021.05.01 ~ )
+[749] Ansan Immigration Office - [Ansan Immigration Office] Residence Control [Location:Gojan Station](2021.05.01 ~ )
+[751] Daejeon Immigration Office Cheonan Branch Office - [Chunan Immigration Center] Residence Control (except F-5) (Location : 8F, Dongnam-gu health center)(2021.05.01 ~ ) * Applying via courier(registered mail) NOT available
+[752] Yangju Immigration office - Foreigner Residence Control(2021.05.01.~2024.10.04.)
+[756] Seoul Immigration Office - Foreigner Residence Control(3F, All countries)
+[758] Cheongju Immigration Office - Eumseong Immigration Center] Residence Affairs (Excluding Permanent Residency)(Address:71, Geumseok-ro, Geumwang-eup, Eumseong-gun, Chungcheongbuk-do)(2021.05.01~)
+[759] Cheongju Immigration Office - [Cheongju Immigration Office] Foreigner Residence Control(2021.11.01.~)(Location: 4F, Hyunnam BD, 1143 Garosu-ro, HeungDeok-gu)
+[760] Daejeon Immigration Office - Global Talent Visa Center (INNOPOLIS DAEDEOK)
+[761] Ansan Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.
+[762] Seoul Southern Immigration Office - [Yeongdeungpo Immigration Service Center]Applying for Permission of Stay (Except D2, D4, D8, E7, F5)[Location: Daerim-dong] * Applying via courier(registered mail) NOT available
+[763] Daegu Immigration Office - [Andong Immigration Center] General Residence Services (Jurisdiction: Andong, Yeongju, Uiseong, Yecheon, Bonghwa, Cheongsong, Yeongyang)
+[764] Yeosu Immigration Office - [Gwangyang Immigration Center]Alien Registration Card, Extension of Stay (F-6, F-1-5 and E-9 status ONLY) [Service available ONLY for Gwangyang residents foreigners] [ Address : 3F, FamilyCultureCenter, 9-7, Donggwang 2-gil, Gwangyang-si, Jeollanam-do]
+[767] Ansan Immigration Office - [Ansan Center] Residence Control(except F-5) (location: Ansan Foreign Resident's Support Headquarters 3F)(2023.09.19.~, AFTER 09:36)
+[768] Ansan Immigration Office - [Ansan Center] Residence Control(except F-5) (location: Ansan Foreign Resident's Support Headquarters 3F)(2023.09.19.~)
+[769] Ansan Immigration Office - [Siheung Center] Residence Control(except F-5) (location: Siheung migrant welfare Center 2F)(2023.09.15.~, AFTER 09:36)
+[770] Ansan Immigration Office - [Siheung Center] Residence Control(except F-5) (location: Siheung migrant welfare Center 2F)(2023.09.15.~)
+[771] Sejongno Branch Office - Foreigner Residence Control (Registration, Visa extension, Change of visa status etc)(2023.10.13.~, AFTER 09:36)
+[772] Sejongno Branch Office - Foreigner Residence Control (Registration, Visa extension, Change of visa status etc)(2023.10.13.~)
+[773] Seoul Immigration Office - Foreigner Residence Control(1F, All countries)(2023.10.14.~, AFTER 09:36)
+[774] Seoul Immigration Office - Foreigner Residence Control(1F, All countries)(2023.10.14.~)
+[777] Busan Immigration Office - [General Civil Service Center]Others(2023.10.14.~, AFTER 09:36)
+[778] Busan Immigration Office - [General Civil Service Center]Others(2023.10.14.~)
+[779] Daegu Immigration Office - Others(2023.10.13.~, AFTER 09:36)
+[780] Daegu Immigration Office - Others(2023.10.13.~)
+[781] Daejeon Immigration Office - Others(2023.08.15.~, AFTER 09:36)
+[782] Daejeon Immigration Office - Others(2023.08.15.~)
+[785] Daejeon Immigration Office Cheonan Branch Office - [Cheonan branch office] Residence Control(2023.11.18.~, AFTER 09:36)
+[786] Daejeon Immigration Office Cheonan Branch Office - [Cheonan branch office] Residence Control(2023.11.18.~)
+[788] Suwon Immigration Office - Scheduling Appointment for Naturalization, Recovery of Nationality etc.(2024.3.23.~)
+[789] Gimhae Branch Office - Others(2024.04.16.~)
+[790] Incheon Immigration Office - [Incheon Immigration Office] Visit Reservation for Permission to Stay (Jurisdiction: Inchoen, Bucheon) (2024.06.20.~, AFTER 09:36)
+[791] Incheon Immigration Office - [Incheon Immigration Office] Visit Reservation for Permission to Stay (Jurisdiction: Inchoen, Bucheon) (2024.06.20.~)
+[792] Incheon Immigration Office - [Gimpo Multicultural Immigrant Center]Visit Reservation for Permission to Stay(Excluding F-5 Change of Status)(Jurisdiction:Gimpo, Ganghwa County) (Location: 1F, Gimpo Foreign Resident Support Center)(2024.04.20.~, AFTER 09:36)
+[793] Incheon Immigration Office - [Gimpo Multicultural Immigrant Center]Visit Reservation for Permission to Stay(Excluding F-5 Change of Status)(Jurisdiction:Gimpo, Ganghwa County) (Location: 1F, Gimpo Foreign Resident Support Center)(2024.04.20.~)
+[794] Ulsan Immigration Office - Foreigner Residence Control(2024.06.21.~2024.09.09., AFTER 09:36)
+[795] Ulsan Immigration Office - Foreigner Residence Control(2024.06.21.~2024.09.09.)
+[798] Pohang Branch Office - Others(2024.04.13.~, AFTER 09:36)
+[799] Pohang Branch Office - Others(2024.04.13.~)
+[800] Seoul Southern Immigration Office - Visit Reservation for Permission to Stay  [Location:Magok-dong](2024.06.18.~, AFTER 09:36)
+[801] Seoul Southern Immigration Office - Visit Reservation for Permission to Stay  [Location:Magok-dong](2024.06.18.~)
+[804] Gwangju Immigration Office - Others(2024.06.04.~)
+[805] Suwon Immigration Office - Foreigner Residence Control(2024.8.30.~)
+[806] Ulsan Immigration Office - Foreigner Residence Control(2024.09.10.~)
+[807] Jeju Immigration Office - Others(2024.07.27.~)
+[808] Yangju Immigration office - Foreigner Residence Control(2024.10.05.~, AFTER 09:36)
+[809] Yangju Immigration office - Foreigner Residence Control(2024.10.05.~)
