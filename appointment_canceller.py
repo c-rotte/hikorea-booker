@@ -52,7 +52,7 @@ class AppointmentCanceller:
             state = tds[3].text
             if state != "Reserved":
                 continue
-            date = tds[1].text.strip()
+            date = "".join(tds[1].text.strip().replace(".", "").split(" ")[0:3])
             appointments.append({"id": reservation_id, "date": date})
         return appointments
 
