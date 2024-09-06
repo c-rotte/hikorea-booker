@@ -27,7 +27,7 @@ specified immigration offices, allowing users to potentially secure earlier appo
 Run the script from the command line with the following arguments:
 
 ```
-python main.py "VISA_NAME" VISA_NUMBER VISA_BIRTH_DATE OFFICE_NUMBERS MAX_DATE CHECK_INTERVAL_SECONDS
+python main.py "VISA_NAME" VISA_NUMBER VISA_BIRTH_DATE OFFICE_NUMBERS MAX_DATE CHECK_INTERVAL_SECONDS URL
 ```
 
 Example:
@@ -52,6 +52,7 @@ python main.py "SMITH JOHN DOE" GE2400001337 20010625 800,801 20241231 15 0000 <
 - `MAX_DATE`: The latest date you want to check for appointments (YYYYMMDD)
 - `CHECK_INTERVAL`: Time in seconds between each check
 - `PIN`: The password to use when booking appointments
+- `URL`: The URL of the discord webhook to send notifications to
 
 ## Important Notes
 

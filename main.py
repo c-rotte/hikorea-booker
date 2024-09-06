@@ -62,14 +62,16 @@ def main():
             for new_appointment in new_appointments:
                 if not current_appointments or new_appointment['date'] < min(
                         app['date'] for app in current_appointments):
-                    print(
-                        f"Found earlier appointment: {new_appointment} (current appointments: {current_appointments})")
+                    print(f"Found earlier appointment: {new_appointment}")
+                    notify(f"Found earlier appointment: {new_appointment}")
                     for current_appointment in current_appointments:
                         print(f"Cancelling appointment: {current_appointment['id']}")
+                        notify(f"Cancelling appointment: {current_appointment['id']}")
                         canceller.cancel_appointment(current_appointment['id'])
                     result_msg = booker.book_appointment(new_appointment)
                     if result_msg != "Success":
                         print(f"Failed to book appointment: {result_msg}")
+                        notify(f"Failed to book appointment: {result_msg}")
                         continue
                     print(f"Booked appointment: {new_appointment}")
                     notify(f"Booked appointment: {new_appointment}")
@@ -80,4 +82,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    finally:
+        print("Exiting...")
+        notify("Exiting...")
