@@ -82,8 +82,10 @@ def main():
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    finally:
-        print("Exiting...")
-        notify("Exiting...")
+    while True:
+        try:
+            main()
+        except Exception as e:
+            print(e)
+            notify("Got an exception, gonna try again in 1 min...")
+            time.sleep(60)
